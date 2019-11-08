@@ -1,1 +1,4 @@
-# Megazine-Resources
+# 西马少年杂志社
+## 杂志来稿仓库
+
+**如您要投稿,请将您的稿件commit到新的branch,并将branch以您的名字命名.谢谢**
