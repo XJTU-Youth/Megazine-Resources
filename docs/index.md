@@ -12,7 +12,7 @@
 
 markdown建议使用[typora](https://typora.io)，因为我们也是使用Typora进行编辑操作的
 
-Typora支持<img src=".\images\LaTeX_logo.svg" alt="LaTeX_logo" style="zoom:5%;" />风格的数学公式,参见[***这里***]( http://support.typora.io/Math/ )
+Typora支持<img src=".\images\LaTeX_logo.svg" alt="LaTeX_logo" style="zoom:5%;" /> $\LaTeX$风格的数学公式,参见[***这里***]( http://support.typora.io/Math/ )
 
 或者看[spec](./pdf/Spec.pdf)
 
