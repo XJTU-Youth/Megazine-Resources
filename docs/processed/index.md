@@ -4,3 +4,7 @@
 
   [pdf版](./new_physical_dangyitong.pdf)
 
+[On u=t/x](./slowcity_gaomingyuan)
+
+  [pdf版](./sloecity_gaomingyuan.pdf)
+
