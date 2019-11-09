@@ -6,5 +6,4 @@
 
 [On u=t/x-少科二高铭原](./slowcity_gaomingyuan)
 
-  [pdf版](./sloecity_gaomingyuan.pdf)
-
+  [pdf版](./slowcity_gaomingyuan.pdf)
