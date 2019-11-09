@@ -16,6 +16,8 @@ Typora支持<img src=".\images\LaTeX_logo.svg" alt="LaTeX_logo" style="zoom:5%;"
 
 或者看[spec](./pdf/Spec.pdf)
 
+*也可以看[**预发布的文章中心页**](./processed)*
+
 如果不会用Github, 尝试[***这个***]( https://github.com/XJTU-Youth/Dress ), 学会Github~~与女装，一举两得~~
 
 [回到主站](/)
