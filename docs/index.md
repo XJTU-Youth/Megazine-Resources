@@ -6,7 +6,7 @@
 
 *~~仅接受**Markdown**文件投稿~~*
 
-**接受Markdown格式以及docx格式**
+**接受Markdown、docx及<img src=".\images\LaTeX_logo.svg" alt="LaTeX_logo" style="zoom:4%;" />格式**
 
 **务必将全部的资源文件（图片 etc.）一并打包放入raw文件夹中，放入一个独立的子文件夹，并署名**
 
