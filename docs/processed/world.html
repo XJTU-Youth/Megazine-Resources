@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>world</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+
+
+.cm-s-inner .cm-operator, .cm-s-inner .cm-property, .cm-s-inner .cm-variable { color: rgb(184, 191, 198); }
+.cm-s-inner .cm-keyword { color: rgb(200, 143, 208); }
+.cm-s-inner .cm-tag { color: rgb(125, 244, 106); }
+.cm-s-inner .cm-attribute { color: rgb(117, 117, 228); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid rgb(184, 191, 198); z-index: 3; }
+.cm-s-inner .cm-string { color: rgb(210, 107, 107); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(218, 146, 74); }
+.cm-s-inner .cm-def, .cm-s-inner .cm-header, .cm-s-inner.cm-def, .cm-s-inner.cm-header { color: rgb(141, 141, 240); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(87, 172, 87); }
+.cm-s-inner .cm-hr { color: rgb(216, 213, 213); }
+.cm-s-inner .cm-link { color: rgb(211, 211, 239); }
+.cm-s-inner .cm-negative { color: rgb(217, 80, 80); }
+.cm-s-inner .cm-positive { color: rgb(80, 230, 80); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta, .cm-s-inner .cm-qualifier { color: rgb(183, 179, 179); }
+.cm-s-inner .cm-builtin { color: rgb(243, 179, 248); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(132, 182, 203); }
+.cm-s-inner .cm-number { color: rgb(100, 171, 143); }
+.cm-s-inner .cm-variable { color: rgb(184, 191, 198); }
+.cm-s-inner .cm-variable-2 { color: rgb(159, 186, 213); }
+.cm-s-inner .cm-variable-3 { color: rgb(28, 198, 133); }
+.CodeMirror-selected, .CodeMirror-selectedtext { background: rgb(74, 137, 220); text-shadow: none; color: rgb(255, 255, 255) !important; }
+:root { --control-text-color: #8B97A3; --side-bar-bg-color: #171717; --bg-color: #242424; --window-border: 1px solid rgba(0,0,0,0.07); --active-file-bg-color: #242424; --active-file-text-color: #B8C8D9; --item-hover-bg-color: #242424; --heading-char-color: #4D6580; --text-color: #8B97A3; --active-toggle-btn-color: #53575C; --rawblock-edit-panel-bd: #3A3C3D ; }
+html { font-size: 16px; -webkit-font-smoothing: subpixel-antialiased; background-color: rgb(43, 43, 43); }
+body { font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", 微软雅黑, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: rgb(169, 183, 198); line-height: 1.5; font-weight: 400; -webkit-font-smoothing: unset; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write > ol:first-child, #write > ul:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(109, 173, 242); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1.8rem; margin-bottom: 1rem; line-height: 1.4; cursor: text; color: rgb(184, 200, 217); }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 code, h1 tt, h2 code, h2 tt, h3 code, h3 tt, h4 code, h4 tt, h5 code, h5 tt, h6 code, h6 tt { font-size: inherit; }
+h1 { text-align: center; padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; margin: 1em auto 1.2em; }
+h1::after { border-bottom: 2px dashed rgb(95, 128, 85); content: ""; width: 100px; display: block; margin: 0.2em auto 0px; height: 2px; }
+h2 { font-size: 1.75em; padding-left: 9px; line-height: 1.4; border-left: 6px solid rgb(61, 82, 102); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h3::before { border-radius: 50%; background-color: rgb(77, 101, 128); content: ""; width: 6px; display: inline-block; height: 6px; vertical-align: middle; margin-bottom: 0.18em; margin-right: 8px; }
+#write > h3.md-focus::before, #write > h4.md-focus::before { background-color: transparent; width: auto; height: auto; }
+h4 { font-size: 1.25em; }
+h4::before { background-color: rgb(77, 101, 128); content: ""; width: 6px; display: inline-block; height: 2px; vertical-align: middle; margin-bottom: 0.18em; margin-right: 8px; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(147, 160, 173); }
+blockquote, dl, ol, p, table, ul { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 0.25em; padding: 0px; margin: 24px 0px; background-color: rgb(58, 60, 61); border: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6, body > h1:first-child, body > h1:first-child + h2, body > h2:first-child, body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ol, ul { padding-left: 30px; }
+ol:first-child, ul:first-child { margin-top: 0px; }
+ol:last-child, ul:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px dotted rgb(78, 85, 92); padding: 0px 12px; color: rgb(139, 151, 163); font-size: 0.9em; }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(83, 87, 92); margin: 0px; padding: 0px; }
+table.md-table tr:nth-child(2n) { background-color: rgb(50, 55, 61); }
+table tr td, table tr th { border: 1px solid rgb(83, 87, 92); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td:first-child, table tr th:first-child { margin-top: 0px; }
+table tr td:last-child, table tr th:last-child { margin-bottom: 0px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { font-size: 90%; border-radius: 3px; font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei", 微软雅黑; }
+code, tt { margin: 0px 2px; padding: 2px 4px; background-color: rgb(65, 73, 82); }
+.md-fences { background-color: rgb(58, 60, 61); margin-bottom: 15px; margin-top: 15px; padding: 12px 1em; }
+.md-task-list-item > input { margin-left: -1.45em; margin-top: calc(1em - 10px); }
+@media print {
+  body { font-size: 11px; font-weight: 400; }
+  pre, table { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(50, 53, 56); border: 0px; border-radius: 3px; color: rgb(138, 145, 153); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before, #write > h5.md-focus::before, #write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-family: "SF Mono", Consolas, "PingFang SC", "Liberation Mono", Courier, monospace, "Microsoft YaHei", 微软雅黑; padding: 2px 4px 0px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { background-color: rgb(23, 23, 23); }
+#typora-quick-open > #typora-quick-open-input > input { background-color: rgb(23, 23, 23); border: none; }
+#typora-quick-open > #typora-quick-open-input > input::placeholder { color: rgb(124, 134, 145); }
+.typora-quick-open-item { padding-top: 3px; }
+.typora-quick-open-list { margin-top: 4px; }
+.typora-quick-open-item-path { margin-top: -2px; }
+#md-notification::before { top: 10px; }
+.context-menu, .megamenu-content, footer, header { font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", 微软雅黑, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color) ; }
+.md-lang { color: rgb(180, 101, 77); }
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active { color: rgb(160, 174, 189); font-weight: 600; }
+.outline-label { color: rgb(124, 134, 145); font-weight: 400; }
+.file-list-item-summary { color: rgb(119, 129, 140); font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", 微软雅黑, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+.active > .file-list-item-summary { color: rgb(184, 200, 217); }
+#write div.md-toc-tooltip { background-color: rgb(43, 43, 43); }
+.context-menu { background-color: rgb(36, 36, 36); }
+.context-menu.dropdown-menu .divider { background-color: rgb(83, 87, 92); }
+.on-focus-mode .md-end-block:not(.md-focus) img, .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) *, .on-focus-mode .md-task-list-item:not(.md-focus-container) > input { color: rgb(87, 94, 102) !important; }
+.on-focus-mode li[cid]:not(.md-focus-container) { color: rgb(87, 94, 102); }
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) *, .on-focus-mode .md-fences.md-focus .CodeMirror-code > :not(.CodeMirror-activeline) * { color: rgb(87, 94, 102) !important; }
+.on-focus-mode .md-focus, .on-focus-mode .md-focus-container { color: rgb(180, 195, 212); }
+.on-focus-mode #typora-source .CodeMirror-code > :not(.CodeMirror-activeline) * { color: rgb(87, 94, 102) !important; }
+.menu-style-btn, .modal-content { border: 1px solid rgb(83, 87, 92); }
+input { border-color: rgb(83, 87, 92); }
+footer.stopselect { border-top-color: rgb(83, 87, 92); }
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default { border-color: rgb(83, 87, 92); }
+.ty-tooltip { background-color: rgb(58, 60, 61); color: rgb(184, 200, 217); }
+b, h1, h2, h3, h4, h5, h6, strong { font-weight: 600; }
+h1, table tr th { font-weight: 400; }
+.file-list-item-file-name { font-weight: 500; }
+
+
+</style>
+</head>
+<body class='typora-export os-windows monocolor-emoji' >
+<div  id='write'  class = 'is-node'><h1><a name="世界" class="md-header-anchor"></a><span>世界</span></h1><h2><a name="mercurows---0" class="md-header-anchor"></a><span>Mercurows—0</span></h2><p><span>【兹⋯⋯】</span></p><p><span>我躺在坚硬且冰冷的地上，醒过来，准确来讲，这并不是“醒”的感觉，而是出生，像婴儿一样，出生在坚硬且冰冷的地上。至少，我的感觉是如此告诉我的。身体背后的感觉根据常识来看似乎是地面，地面的感觉似乎是冰冷而坚硬的。</span></p><p><span>【⋯⋯连接系统成功，正在加载⋯⋯】</span></p><p><span>周围有嘈杂的声音，我的身体告诉我了疼痛的感觉，这是“疼”，身体为了自我保护而产生的感觉。</span></p><p><span>我的头脑一片空无，什么也没有，没有思路和想法，也没有记忆，连“没有”也没有。</span></p><p><span>⋯⋯</span></p><p><span>我在地上躺了一段时间，这段时间有多长？</span></p><p><span>⋯⋯</span></p><p><span>周围有动物向我靠近，会动的物体，根据常识来看似乎是人类，他们说着一种人类的语言，听起来像是：</span></p><p><span>“找到了！快过来啊！有一个生还者！快看，他眨眼了，他还有意识？！”</span></p><p><span>我眯着眼看着向我跑来的人，用尽浑身的力气小声地说：“我可能失忆了。”</span></p><p><span>我只能这么回答，我必须及时冷静下来，强迫自己说些理智的话。</span></p><p><span>“⋯⋯你还记得刚刚发生了什么吗？”他们问我。</span></p><p><span>我知道这是个很弱智的问题，是个正常人都能回答，但我回答不上来：</span></p><p><span>“我⋯⋯不知道。”</span></p><p><span>“失忆了吗？先别动，我们找人把你抬走。”</span></p><p><span>于是，我竟然，躺在地上开始思考他们为什么要把我抬走，我对我自己莫名其妙地从地上醒了过来这件事，居然没有产生半点怀疑，我连求生的欲望也没有浮现，我的脑子里丝毫没有关于这个「世界」的任何感觉。</span></p><p><span>我也没法进行自我行动，至少以我目前的身体状况来看，我的身体完全无法动弹。痛觉告诉我的脑子：我受伤了。他们应该会把我送去治疗我的地方，根据常识来看，应该是个叫“医院”的地方，人类在那里治疗生病或受伤的患者。</span></p><p><span>我尝试着先从一些基本的东西回忆起，如果我和他们一样也是人类，那么我应该有一个用于直接识别身份的称呼，就是“名字”，但我不记得我的名字。说过了，我像个才出生的婴儿。我不记得自己存在过的时间，就是“年龄”，我也无法回忆我的过去。</span></p><p><span>“能试着站起来吗？”他们这么说着。</span></p><p><span>我用尽全身的力气努力动了动脚，这是移动的感觉——</span></p><p><span>我只是在地上颤抖了一下。</span></p><p><span>——人类把我抬到应该是“担架”的东西上，他们是医院的急救人员。</span></p><p><span>我疯狂地运行着自己的大脑，企图恢复我作为人类的一些意识，这种感觉很奇怪，就像为了运行一个软件而去加载所需的文件、图片、音乐一样。</span></p><p><span>“现在是AW0032年8月31日，刚刚在xxxx地方似乎发生了xxxx事。“他们这么告诉我，但我完全没有听进去。</span></p><p><span>之后我被迅速送上了蒸汽穿梭机，然后被一群护士和医疗人形簇拥进了医院。我的身体没有受到任何创伤，这很奇怪，但我却能感受到了全身上下，发自骨头内部的痛觉。医院给我的初步解释是脑部损伤，于是我被做了一些神经方面的检查，这也解释了为什么我会失忆。</span></p><p><span>我躺在病床上，我的意识模糊而不可信。邻床有一个女性人类，她身旁的床头柜上摆了一个用于辨别身份的名牌，上面写着：“xxxx·xxxx·Nimokin  年龄16”，她也是生还者之一，和我一样。</span></p><p><span>那个叫Nimokin的女孩平躺着，身上有很多处擦伤，她似乎是昏过去了，或许等她醒来后我可以向她询问一些关于我和这个「世界」的事情。</span></p><p><span>听别人说那是一起爆炸事故。在哪里发生的爆炸，我在哪里醒来的，这些东西已经完全记不起来了，但我是和那个女孩在一起被发现的。</span></p><p><span>究竟发生了什么事我完全无法回忆，向我团团汇来的庞大的信息量我一时无法接受，我甚至还没有接受我是人类的现实。我失忆了，但这个失忆过于异常，我忘了自己是人！</span></p><p><span>直到目前为止，我也还只是在被动地接受着这个「世界」：我是男性人类，我年龄16，我没有名字，我没有家庭没有学校没有过去，好⋯⋯而我却丝毫没有任何恐惧或惊慌失措的感觉。我仿佛不是这个「世界」的东西。</span></p><p><span>这点让才我感到恐惧起来。</span></p><p><span>邻床的女孩还没有苏醒，医护人员在帮我恢复意识。</span>
+<br><br>
+<span>——我的过去，就只有这些。</span></p><p><span>这种「世界」的感觉，人类们把它叫做“存在”，触觉，视觉，听觉，所有感觉突然结合起来，汇集在我的身上，于是我产生了我的意识，这是我现在唯一知道的事情。</span></p><p><span>啊，真是，如此唯心主义的一句话，我也无法确认这究竟是不是错误的感觉，错误的意识，或许我现在还无法得知——</span></p><p><span>因为这个「世界」相对于我来说，才刚刚开始。</span></p><p>&nbsp;</p><h2><a name="mercurows---1" class="md-header-anchor"></a><span>Mercurows—1</span></h2><p><span> 我的名字，我叫Mercurows，今年16岁。</span></p><p><span>我，还有和我同龄的女孩—Nimokin，是“残月事件”的生还者，仅有的两位生还者。</span></p><p><span>啊，说起那个事件，因为是在月底发生的，所以叫“残月事件”，事件的经过，我失忆了，所以发生了什么我一点也不知道。</span></p><p><span>后来这事被传开了，好像特别恐怖。在第六瓣的二十一区发生的特大事故，一万多个人瞬间就消失。但现场却只有极少数的墙壁，道路出现了微小的损坏，并没有任何爆炸或是大型战斗之后留下的痕迹。这一万多个人，似乎是人间蒸发了。</span></p><p><span>现场已经被警卫人形严密地封锁了起来，根据特遣人工调查组组长所反映的情况，附近第二十区和二十二区的居民当时似乎都听到了巨大的轰鸣声，但是调查了二十一区内所有的公共或私人的纳米监控，下午那段时间的影像记录全部损坏，无法复原。后来有行人路过的时候，才发现躺倒在地上的昏迷的我和Nimo。</span></p><p><span>“把电视开开来吧。”Nimokin这么对我说。</span></p><p><span>——Mercurows这个名字是她给我起的，在她醒来的时候，耳边一直回荡着这个声音。</span></p><p><span>我们在医院里已经躺了两周了，今天会有调查组的人带我们出院，并安排我们日后的生活。</span></p><p><span>Nimo的家人，在事故里全部遇难。</span></p><p><span>——“今天是外元32年九月十五日，欢迎收看城区新闻。我们将继续关注到前两周发生的骇人听闻的“残月事件”，经过后续的工作，调查组成员发现，在8月31日那天下午，拉莱耶城的其他瓣区，也多少出现有人突然消失的情况：在下午的4:27，第二瓣区的403线穿梭机上，正在与xxxx先生聊天的xxxx先生突然消失了，只剩下身上穿的衣服，手里拎着的公文包散落在地上，一旁的乘客吓得瘫倒在地；另外，在xxxx区也发生了⋯⋯</span></p><p><span>所幸，经过医院治疗，目前两位生还者已完全脱离生命危险。根据拉莱耶城区中心HASTA机构发布的指示，即日起将停止关于“残月事件”的任何调查活动。</span></p><p><span>下面让我们来看下一则新闻，今天，第五瓣区行政议会长将会见⋯⋯”</span></p><p><span>“什，什么？！！”传来了Nimo在病床上绝望的哀怨，为什么要停止调查啊？！！到底发生了什么都还不清楚呢啊！</span></p><p><span>“我觉得这事HASTA绝对是做错了，总不能就这么不了了之啊，起码得给我一个合理的解释吧！！”</span></p><p><span>她很难受，是个正常人都会感到难受，亲人离去，生活改变，然而自己去无法得到一切的原因。</span></p><p><span>说实话当我看到这则新闻的时候，我也被吓了一跳——对于这个谜团，想要知道真相的人实在是太多了。但唯独我没有资格去感到恐慌什么的，因为对于这个「世界」的一切，我真的只能算是一个新人。我只好尽我所能去安慰她：</span></p><p><span>“啊啊，别难过啊，HASTA这么做肯定有他们的理由吧。我觉得他们不会把这事放着不管的，他们肯定已经知道一些事情了，或者他们觉得有些事还是不要告诉你好一点。“</span></p><p><span>”如果他们真的是在为我好的话，他们就应该告诉我整个事件的真相！“Nimo喊了出来。</span></p><p><span> 当然，我自己是一点体会也没有的，所以我无法做到和她共情，更切身处地地去理解她。毕竟我什么也没有，什么也不是。或许在”残月事件“发生之前，我也和她，和这「世界」上所有人一样，都有着和正常人类一样的人生经历；或许我也有自己的家人，朋友，有我所难以放下的事物。如果我没有失忆的话，或许我也会和她一样，也会很迫切的想要得到一个能说得过去的解释。或许是这样，或许有人就知道我的身世，但他目前还没有告诉我。</span></p><p><span>其实就算告诉了我，那又能怎样，就算告诉了我以前的名字是“这个那个”而不是”Mercurows“，就算他告诉了我曾经发生过的事，又能使我怎样呢？因为这些事情都不是我自己回忆出来的，所以就算听到了，也只会当成一个故事一样记在心里罢了，叫”这个那个“的人，我也只会认为是故事的主角，而很难把他想成是我自己吧。</span></p><p><span>从心理学的角度来讲，这大概是失我症。可能也是创伤后心理障碍的一种，就像之前所有的记忆全部都转化成了事件的形式存储在了一个人的大脑中。</span></p><p><span>所谓回忆，其运作的全部流程是由四段组成的：编码（学习），储存，读取，再确认；就像录像带一样，其中的一环有错误，大脑便无法正常工作。经历一件事——也就是编码的过程，赋予了这个事件自己的情感，包含了情感和意识的事件，才能被称之为是记忆；当时的感觉逐渐淡薄，消散了，”记忆“便会变质成”事件“，仿佛只是一个叫作我的名字的角色所经历的一件事。</span></p><p><span>而我还要更惨一点，我连事件本身也忘却了。从意识上看，可以这么说：“残月事件“之前就不存在我这个人。</span></p><p><span>或许正是因为情感的易逝，记忆才会变得对于一个人而言如此弥足珍贵，Nimo才会如此想知道真相，我尽力去理解她。</span></p><p><span>Nimo很郁闷，她的眼角划过几道泪痕。</span></p><p><span>“呲呲呲呲呲······“病房的液压门放出了白色的蒸汽，刷地一下打开了。伴随着烟气走进来的，是人工特遣调查组组长，他的身后跟着两个持枪的侦察型号的军用人形。</span></p><p><span>“别跟进来了，“组长Nyarlathotep如是说道，“会吓到孩子的。“</span></p><p><span>人形吭了一声，然后转身离开了。</span></p><p><span>纵然从他的脸上能看出一种饱经风霜的冷血气质，他对我们却很温柔，这个叫Nyarlathotep的中年男子。</span></p><p><span>我们还是很怕他的，尤其是Nimo。因为他的身份——HASTA特遣调查组组长；在拉莱耶这座里，任谁听见这个名字也会不禁哆嗦一下。</span></p><p><span>HASTA便是这座城的中心：议会的总主持机构，行政和军事行动的领导者，国防，科研，基础建设······换句话说，就是这里的政府，拉莱耶这座城就是被HASTA建起来的。 </span></p><p><span>人都是害怕权威的，Nimo也是这么生活着的人。但这种对权威的恐惧，在目前已完全被对真相的欲望掩盖：</span></p><p><span>“为什么要停止调查？！“她从床上翻了下来，原本憋在眼角的泪水，随着质问的话语，一下满溢而出。</span></p><p><span>她的情绪要崩，不，是已近崩溃了。对于一个普普通通生活在这个「世界」上的孩子，眼中只有希望地向前走着，永远也不会去考虑“真实“或是“虚假“之类的东西，从来都不用担心明天是不是还会再有“明天“。这样的未来就被这么改写了，像是神伸脚踩死一只虫子一样，如此简单，突然，毫无根据的被重新规划了。</span></p><p><span>恐怕只有我，才能保持现在这种似有似无的冷静了。</span></p><p><span>“这由不得我们。“组长Nyarlathotep在尽力让Nimo平静下来，“我理解你，这件事，无论对谁来说，都是一起不可轻视的悲剧。我们也很想给你们一个令人容易接受的真相，但这是HASTA的高层发布下来的命令，通常，高层领导从来是不会对我们有直接指示的，但这次真的很奇怪，HASTA行政议长亲自下令禁止调查。没办法，我们除了服从以外，没办法去反抗HASTA的命令。”</span></p><p><span>“可是⋯⋯我⋯⋯，我真的⋯⋯我还什么都不知道啊！！真的⋯⋯太不公平了！！！”Nimo已说不出话来。</span></p><p><span>“没关系的，”组长靠近她，摸了摸她的头，“既然是亲自下令，说明高层的那些人对这件事还是关心的，对于这件事情的一些真相，如果不知道，不去在意它们，对你们来讲可能还会更好一点。这个「世界」没有完全展现给我们的事实太多了，不去关心，不想着怎样弄清它们，作为人类，这样不也能生活下去吗？”</span></p><p><span>他说的有一点道理，但我似乎不是这么认为的。</span></p><p><span>“哦，对了，出院手续已经办理好了，今天你们就可以回⋯⋯啊，我们先去安排住的地方吧！”</span></p><p><span>我们两个现在成了孤儿，Nimo还有一个家，但是现在已经被划定为禁区了，调查组会尽力申请将其中完好的家具搬出来。Nimo在城区有身份，存储在HASTA的档案库里，而我没有；无论是采集了我的DNA还是指纹什么的，在拉莱耶的档案库里，都没有我这个人，好惨！没办法，工作人员会先带我去录入一个身份。</span></p><p><span>我们在第六瓣第十三区被安排了两间住处，同时还配给我们两个家用服务人形，HASTA的相关人员定期会来照看我们的生活，与其说是照看，其实就是在这段时间里，我们还处于HASTA方的监视之中。Nimo在二十一区的学校不能进去上学了，我们的新学校也被&#39;&#39;特地&quot;安排好。</span></p><p><span>我们的事情，”残月事件“肯定还没有结束。就HASTA对我们的监视程度来看，我们身上，肯定还有一些我们自己都不知道的事情。组长Nyarlathotep所说的话从另一个角度来看，也坦白了HASTA在隐瞒些什么。</span></p><p><span>Nimokin还在病房里自闭着，我跟着调查组的人走出了医院的扇形活塞门。清晨，在笼罩着的烟雾中，升起了第六瓣区今天的太阳，光芒透过雾水，散射出丁达尔效应。第一艘蒸汽飞艇浮了起来，铜色的板甲反射金色的日光。向东北方远远望去，能看见第六瓣区青黑色的围墙——那是拉莱耶城与外界的隔离带。</span></p><p><span>我不知道的事情还有很多，但我知道要去做什么了，从”残月时间“开始</span></p><p><span>【seeking the whole rest of brand new world】</span></p><h2><a name="插叙1" class="md-header-anchor"></a><span>插叙1</span></h2><p>&nbsp;</p></div>
+</body>
+</html>

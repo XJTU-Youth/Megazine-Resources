@@ -4,7 +4,7 @@
 
 ## 关于投稿
 
-**如果你要投稿，请commit你的稿子到[*这个仓库*]( https://github.com/XJTU-Youth/Megazine-Resources/ )，并新建一个branch，以你的名字命名**
+**如果你要投稿，~~请commit你的稿子到[*这个仓库*]( https://github.com/XJTU-Youth/Megazine-Resources/ )，并新建一个branch，以你的名字命名~~发邮件给编辑**
 
 *~~仅接受**Markdown**文件投稿~~*
 
